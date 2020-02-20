@@ -1,0 +1,137 @@
+body {
+    background:linear-gradient(160deg,black,green);
+  }
+  
+  .product {
+    background: linear-gradient(to right,green,white);
+    color: yellow;
+    margin: 10px;
+    padding: 5px;
+    height: 30px;
+    font-size: 20px;
+    font-family:monospace;
+    text-align: start;
+    position: relative;
+    ;
+  
+    border-radius: 12px;
+    box-shadow: 0px 1px 10px 1px black;
+  }
+  
+  .product:hover{
+    background:linear-gradient(to right,green,rgb(143, 143, 143));
+    
+    color: black;
+  }
+  
+  .add-product-button{
+    position: fixed;
+    bottom: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    left: 0;
+    margin: 17px;
+    text-align: center;
+    font-size: 1rem;
+    background: repeating-radial-gradient(rgb(153, 153, 153),rgb(104, 102, 102));
+    
+    box-shadow: 0px 1px 10px 1px black;
+  }
+  
+  .add-product-button:hover{
+    text-align: center;
+    font-size: 1.2rem;
+    background: repeating-radial-gradient(rgb(68, 67, 67),rgb(153, 153, 153));
+    
+  
+  }
+  
+  .dialog {
+    /* Center an element in its reletive parent */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+    font-size: 1rem;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(to right,green,white);
+    border-color: linear-gradient(to right,white,green);
+    border-width: 5px;
+    border-style: outset;
+    border-radius: 5%;
+    display: none;
+  
+    animation-name: pop-dialog;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in
+  }
+  
+  @keyframes pop-dialog {
+    0% {
+      top: 1080px;
+    }
+    100% {
+      top: 50px;
+    }
+  }
+  
+  .title{
+    text-align: center;
+  }
+  
+  
+  input {
+    width: 100%;
+  }
+  
+  .edit-button{
+   font-size: 0.5rem;
+  float: right;
+   margin: 5px;
+   border-radius: 12px;
+   box-shadow: 0px 1px 10px 1px black;
+  }
+  
+  .delete-button{
+   font-size: 0.5rem;
+   background-color:repeating-radial-gradient(rgb(153, 153, 153),rgb(68, 67, 67));;
+   color: red;
+   margin: 5px;
+   float: right;
+   border-radius: 12px;
+   box-shadow: 0px 1px 10px 1px black;
+  }
+  
+  h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chartreuse;
+    margin: 14px;
+  }
+  
+  .small-img{
+    width:60px;
+  }
+  
+  .product-stock {
+    font-size: 1rem;
+    margin: 5px;
+    color: red;
+    float:left;
+  } 
+  .top{
+    display:flex;
+    height: 50px;
+  }
+  .search-bar{
+    width: 200px;
+    height: 30px;
+    align-self: flex-end;
+  }

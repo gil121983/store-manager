@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Products Application</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="top">
+    <h1>RELEASES</h1>
+    <input type="text" placeholder="search..." class="search-bar">
+  </div>
+  <!-- This element will be populated by render function in main.js -->
+  <div class="product-list"></div>
+
+  <!-- Dialog -->
+  <div class="dialog">
+    <button onclick="closeDialog()">X</button>
+    <div class="title"></div>
+    <div class="content"></div>
+    <button onclick="closeDialog()">Cancel</button>
+  </div>
+
+  <button onclick="openDialog('ADD')" class="add-product-button">+</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>
